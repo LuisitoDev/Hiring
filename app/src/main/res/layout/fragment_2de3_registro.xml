@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1B83E7"
+    tools:context=".ui.register.Register2of3Fragment" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="16dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="32dp"
+                android:text="Paso 2 de 3"
+                android:textAlignment="viewStart"
+                android:textColor="#EAEAEA"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="84dp"
+                android:text="Nombre(s)"
+                android:textColor="#EAEAEA"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@+id/register_editTxtv_nombre"
+                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+            <EditText
+                android:id="@+id/register_editTxtv_nombre"
+                android:layout_width="300dp"
+                android:layout_height="48dp"
+                android:background="@drawable/edit_text_border"
+                android:backgroundTint="#FFFFFF"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#EAEAEA"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                android:text="Apellido Paterno:"
+                android:textColor="#EAEAEA"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@+id/register_editTxtv_app"
+                app:layout_constraintTop_toBottomOf="@+id/register_editTxtv_nombre" />
+
+            <EditText
+                android:id="@+id/register_editTxtv_app"
+                android:layout_width="300dp"
+                android:layout_height="48dp"
+                android:background="@drawable/edit_text_border"
+                android:backgroundTint="#FFFFFF"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#EAEAEA"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                android:text="Apellido Materno:"
+                android:textColor="#EAEAEA"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@+id/register_editTxtv_apm"
+                app:layout_constraintTop_toBottomOf="@+id/register_editTxtv_app" />
+
+            <EditText
+                android:id="@+id/register_editTxtv_apm"
+                android:layout_width="300dp"
+                android:layout_height="48dp"
+                android:background="@drawable/edit_text_border"
+                android:backgroundTint="#FFFFFF"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#EAEAEA"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</FrameLayout>

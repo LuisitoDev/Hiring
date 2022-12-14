@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Constraint_layout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.advancedsearch.AdvancedSearchFragment">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/Constraint_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/linearLayout6"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/round_blue_background"
+                android:orientation="horizontal"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <EditText
+                    android:id="@+id/et_search"
+                    style="@style/font_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:ems="10"
+                    android:hint="@string/tv_search"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:singleLine="false"
+                    android:textAppearance="@style/font_text" />
+
+                <ImageButton
+                    android:id="@+id/btn_lookingForSearch"
+                    style="@style/button_images"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:contentDescription="@string/button_search"
+                    android:src="@drawable/ic_search_black_24dp" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_dateTo"
+                style="@style/font_text"
+                android:layout_width="170dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/round_blue_background"
+                android:clickable="true"
+                android:ems="10"
+                android:focusable="false"
+                android:hint="@string/tv_toDate"
+                android:importantForAutofill="no"
+                android:inputType="date"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textAppearance="@style/font_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout6"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_jobs"
+                android:layout_width="match_parent"
+                android:layout_height="700dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/s_query"
+                tools:listitem="@layout/item_jobcard" />
+
+            <EditText
+                android:id="@+id/et_paymentFrom"
+                style="@style/font_text"
+                android:layout_width="170dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_blue_background"
+                android:ems="10"
+                android:hint="@string/tv_minPayment"
+                android:importantForAutofill="no"
+                android:inputType="numberDecimal"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textAppearance="@style/font_text"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_dateFrom"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+
+            <EditText
+                android:id="@+id/et_paymentTo"
+                style="@style/font_text"
+                android:layout_width="170dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/round_blue_background"
+                android:ems="10"
+                android:hint="@string/tv_maxPayment"
+                android:importantForAutofill="no"
+                android:inputType="numberDecimal"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textAppearance="@style/font_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_dateTo"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+
+            <EditText
+                android:id="@+id/et_dateFrom"
+                style="@style/font_text"
+                android:layout_width="170dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_blue_background"
+                android:clickable="true"
+                android:ems="10"
+                android:focusable="false"
+                android:hint="@string/tv_fromDate"
+                android:importantForAutofill="no"
+                android:inputType="date"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textAppearance="@style/font_text"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout6"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+
+            <Spinner
+                android:id="@+id/s_query"
+                style="@style/font_text"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/round_blue_background"
+                android:entries="@array/queries"
+                android:theme="@style/font_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_paymentFrom" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

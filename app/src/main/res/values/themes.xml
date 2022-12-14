@@ -1,0 +1,88 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Hiring" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/white_500</item>
+        <item name="colorPrimaryVariant">@color/white_700</item>
+        <item name="colorOnPrimary">@color/white_200</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/blue_200</item>
+        <item name="colorSecondaryVariant">@color/blue_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <!-- Customize your theme here. -->
+        <item name="android:colorBackground">@color/blue_500</item>
+    </style>
+
+    <style name="button_images">
+        <item name="android:scaleType">fitCenter</item>
+        <item name="backgroundTint">@color/transparent</item>
+        <item name="tint">@color/white_200</item>
+    </style>
+
+    <style name="font_title">
+        <item name="android:fontFamily">@font/inter_bold</item>
+        <item name="android:textColor">@color/white_200</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="font_text">
+        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="android:textColor">@color/white_200</item>
+        <!--        considerar quitar el textColorHint esta aplicado a textviews por ahora pero no es repetible-->
+        <item name="android:textColorHint">@color/white_200</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="font_text_black">
+        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="font_text_black_small">
+        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="button">
+        <item name="backgroundTint">@color/blue_200</item>
+        <item name="android:textColor">@color/white_200</item>
+    </style>
+
+    <style name="button_dark">
+        <item name="backgroundTint">@color/blue_800</item>
+        <item name="android:textColor">@color/white_200</item>
+    </style>
+
+    <style name="Theme.Hiring.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="tablayout_style">
+        <item name="tabIndicatorColor">@color/white_200</item>
+        <item name="tabIndicator">@drawable/tab_selected_background</item>
+        <item name="tabTextColor">@color/white_200</item>
+        <item name="tabSelectedTextColor">@color/blue_500</item>
+        <item name="tabRippleColor">@color/transparent</item>
+        <item name="android:background">@color/transparent</item>
+    </style>
+
+    <style name="font_tablayout">
+        <item name="android:fontFamily">@font/inter_bold</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="font_text_blue">
+        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="android:textColor">@color/blue_900</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Theme.Hiring.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.Hiring.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

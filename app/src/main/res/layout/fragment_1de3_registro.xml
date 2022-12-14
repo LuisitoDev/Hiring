@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1B83E7"
+    tools:context=".ui.register.Register1of3Fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="16dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="32dp"
+                android:text="Paso 1 de 3"
+                android:textAlignment="viewStart"
+                android:textColor="#EAEAEA"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/view"
+                android:layout_width="175dp"
+                android:layout_height="175dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="36dp"
+                android:elevation="12dp"
+                android:innerRadius="0dp"
+                android:shape="ring"
+                android:thicknessRatio="1.9"
+                app:cardCornerRadius="175dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView8">
+
+                <ImageView
+                    android:id="@+id/fg_register_imagen"
+                    android:layout_width="match_parent"
+                    android:layout_height="175dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_avatar"></ImageView>
+            </androidx.cardview.widget.CardView>
+
+            <EditText
+                android:id="@+id/register_editTxtv_password"
+                android:layout_width="300dp"
+                android:layout_height="48dp"
+                android:background="@drawable/edit_text_border"
+                android:backgroundTint="#EAEAEA"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:textColor="#EAEAEA"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/edit_txtV_Password"
+                android:textColor="#EAEAEA"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@+id/register_editTxtv_password"
+                app:layout_constraintTop_toBottomOf="@+id/register_editTxtv_email" />
+
+            <Button
+                android:id="@+id/fg_register_btn_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#009DCF"
+                android:text="Subir imagen"
+                android:textColor="#EAEAEA"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@string/edit_txtV_Email"
+                android:textColor="#EAEAEA"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@+id/register_editTxtv_email"
+                app:layout_constraintTop_toBottomOf="@+id/fg_register_btn_img" />
+
+            <EditText
+                android:id="@+id/register_editTxtv_email"
+                android:layout_width="300dp"
+                android:layout_height="48dp"
+                android:background="@drawable/edit_text_border"
+                android:backgroundTint="#EAEAEA"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:textColor="#EAEAEA"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

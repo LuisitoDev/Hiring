@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1B83E7"
+    tools:context=".ui.profile.Edit1of2Fragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/descripcion_visualizeJob_tv"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Fecha de nacimiento:"
+                    android:textColor="#EAEAEA"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/edit_editTxtv_fn"
+                    android:layout_width="300dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/edit_text_border"
+                    android:backgroundTint="#FFFFFF"
+                    android:clickable="true"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="textPersonName"
+                    android:textColor="#EAEAEA"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/descripcion_visualizeJob_tv" />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="Escolaridad maxima:"
+                    android:textColor="#EAEAEA"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/edit_editTxtv_fn" />
+
+                <Spinner
+                    android:id="@+id/edit_spn_esc"
+                    style="@style/font_text"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#EAEAEA"
+                    android:theme="@style/font_text"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:text="Profesion u oficio:"
+                    android:textColor="#EAEAEA"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/edit_spn_esc" />
+
+                <EditText
+                    android:id="@+id/edit_editTxtv_prof"
+                    android:layout_width="300dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/edit_text_border"
+                    android:backgroundTint="#FFFFFF"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textColor="#EAEAEA"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+                <TextView
+                    android:id="@+id/nombreUsuario_visualizeJob_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="Describe brevemente tus aptitudes:"
+                    android:textColor="#EAEAEA"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/edit_editTxtv_prof" />
+
+                <EditText
+                    android:id="@+id/edit_editTxtv_desc"
+                    android:layout_width="300dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/edit_text_border"
+                    android:backgroundTint="#FFFFFF"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:inputType="textMultiLine"
+                    android:textColor="#EAEAEA"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/nombreUsuario_visualizeJob_tv" />
+
+                <Button
+                    android:id="@+id/fg_edit_btn_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:backgroundTint="#009DCF"
+                    android:text="Guardar cambios"
+                    android:textColor="#EAEAEA"
+                    app:layout_constraintEnd_toEndOf="@+id/edit_editTxtv_desc"
+                    app:layout_constraintTop_toBottomOf="@+id/edit_editTxtv_desc" />
+
+                <Button
+                    android:id="@+id/fg_edit_btn_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:backgroundTint="#009DCF"
+                    android:text="Volver"
+                    android:textColor="#EAEAEA"
+                    app:layout_constraintStart_toStartOf="@+id/edit_editTxtv_desc"
+                    app:layout_constraintTop_toBottomOf="@+id/edit_editTxtv_desc" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

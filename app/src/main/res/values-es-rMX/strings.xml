@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="txtV_Login">Iniciar Sesion</string>
+    <string name="txtV_TitleApp">Hiring!</string>
+    <string name="edit_txtV_Email">Correo electronico</string>
+    <string name="edit_txtV_Password">Contraseña</string>
+    <string name="btn_Login">Iniciar Sesion</string>
+    <string name="tv_noAccount">¿No tienes una cuenta?</string>
+    <string name="tv_Register">¡Registrate aqui!</string>
+    <string name="imageV_next">Siguiente</string>
+
+    <string name="app_name">Hiring!</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="title_home">Inicio</string>
+    <string name="title_account">Cuenta</string>
+    <string name="title_edite_profile">Editar Perfil</string>
+    <string name="title_details_jobs">Detalles trabajo</string>
+    <string name="title_notifications">Notificaciones</string>
+    <string name="title_messages">Mensajes</string>
+    <string name="button_offcanvas">Abrir el menú lateral</string>
+    <string name="subtitle_home">¿Qué trabajo encontraremos hoy?</string>
+    <string name="button_search">Botón para buscar</string>
+    <string name="tv_search">Buscar…</string>
+    <string name="title_jobcard">Trabajo: %1$s</string>
+    <string name="subtitle_jobcard">Contratista: %1$s</string>
+    <string name="desc_jobImg">Imagen del trabajo</string>
+    <string name="desc_userImg">Imagen de un usuario</string>
+    <string name="tv_personName">Nombre de un usuario</string>
+    <string name="desc_envelope">Icono de sobre</string>
+    <string name="tv_notification">%1$s te ha respondido</string>
+    <string name="tv_userName">El nombre de usuario va aqui</string>
+    <string name="tv_userAge">%1$s años</string>
+    <string name="tv_schoolarship">Escolaridad Máxima</string>
+    <string name="tv_profession">Oficio o Profesión</string>
+    <string name="tv_aptitudes">Aptitudes</string>
+    <string name="tv_userSchoolarship">Escolaridad</string>
+    <string name="tv_userProfession">Profesión</string>
+    <string name="iv_graduationCap">Imagen de Birrete</string>
+    <string name="iv_briefcase">Imagen de Maletín</string>
+    <string name="btn_editProfile">Editar Perfil</string>
+    <string name="title_offerJob">Dar Trabajo</string>
+    <string name="title_jobs">Mis Trabajos</string>
+    <string name="tv_jobTitle">Titulo del trabajo</string>
+    <string name="tv_jobDescription">Descripcion trabajo</string>
+    <string name="tv_jobPayment">Monto a pagar</string>
+    <string name="et_jobTitle">Escriba el titulo del trabajo aqui</string>
+    <string name="et_jobDescription">Descripción</string>
+    <string name="btn_cancel">Cancelar</string>
+    <string name="btn_offer">Ofertar</string>
+    <string name="btn_uploadImage">Subir Imagen</string>
+    <string name="btn_seeApps">Ver solicitudes</string>
+    <string name="btn_editJob">Editar trabajo</string>
+    <string name="tv_employer">Contratista</string>
+    <string name="btn_apply">Aplicar</string>
+    <string name="ti_myJobs">Mis Trabajos</string>
+    <string name="ti_myApps">Mis Solicitudes</string>
+    <string name="tv_status">Estatus: %1$s</string>
+    <string name="btn_refuse">Rechazar</string>
+    <string name="btn_hire">Contratar</string>
+    <string name="title_applications">Solicitudes</string>
+    <string name="btn_save">Guardar</string>
+    <string name="title_hired">Contratados</string>
+    <string name="btn_erase">Borrar</string>
+    <string name="tab_myjobs">Mis trabajos</string>
+    <string name="tab_myapplications">Mis solicitudes</string>
+    <string name="tab_pending">Pendientes</string>
+    <string name="tab_hired">Contratados</string>
+    <string name="tv_fromDate">Desde la fecha:</string>
+    <string name="tv_toDate">Hasta la fecha:</string>
+    <string name="tv_minPayment">Pago min.</string>
+    <string name="tv_maxPayment">Pago max.</string>
+    <string name="btn_changePassword">Cambiar contraseña</string>
+    <string name="tv_newPassword">nueva contraseña</string>
+    <string name="title_change_password">Cambiar Contraseña</string>
+    <string name="string_create">Crear</string>
+    <string name="string_edit">Editar</string>
+    <string name="mi_logout">Cerrar sesión</string>
+    <string name="btn_erase_job">Borrar trabajo</string>
+    <string name="btn_close_job">Cerrar trabajo</string>
+    <string-array name="queries">
+        <item>Paga más baja</item>
+        <item>Paga más alta</item>
+        <item>Fecha más reciente</item>
+        <item>Fecha más antigua</item>
+    </string-array>
+    <string name="tv_age">%1$s años</string>
+    <string name="tv_notification_applied">%1$s hizo solicitud en tu trabajo</string>
+    <string name="btn_draft">Borrador</string>
+</resources>
